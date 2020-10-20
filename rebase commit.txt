@@ -1,0 +1,21 @@
+trước khi rebase commit chúng ta cần kiểm tra các commit trong máy băngf lệnh 
+git lock --oneline
+số lượng commit đc tinhs tưf commit merge gần nhất
+để rebase commit sử dụng lệnh
+git rebase -I HEAD~số lượng commit
+giữ pick đâuf tiên
+từ pick thứ 2 đổi pick thành add
+
+ctrl+ x
+y
+enter
+
+giữ lại 1 commit các commit khác thêm # vào đầu tiên
+
+ctril x 
+y 
+enter
+
+
+
+
