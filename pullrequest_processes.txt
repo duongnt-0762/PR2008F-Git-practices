@@ -1,0 +1,25 @@
+buoc 1: Fork 
+de fork duoc chung ta su dung nut fork tren man hinh Github cua Repo
+
+buoc 2: tao Clone
+click nut code tren Repo chung, chon phuong thuc mong muon (SSH or HTTPS) 
+su dung lenh git clone + url 
+
+buoc 3: tao Remote 
+de tao remote, ta can kiem tra co bn remote hien co: su dung lenh git remote -v
+neu chi co origin, tao them 1 remote (ten tuy y) de tao connect giua repo rieng va repo chung, su dung lenh: git remote add + namne + remote_url 
+
+buoc 4: tao nhanh
+lenh: git checkout -b ten nhanh
+
+buoc 5: tao commit
+git commit -m "ten commit muon dat"
+tuy nhien truoc do ta can add file moi, thay doi, xoa vao trong staging bang lenh git add -A
+
+vi the can lam theo thu tu:
+git add -A
+git commit -m "ten commit"
+
+buoc 6: tao pull request
+
+git push origin ten_nhanh -f 
