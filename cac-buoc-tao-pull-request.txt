@@ -1,0 +1,47 @@
+  Buoc 1: Fork.
+_ De Fork duoc chung ta su dung nut fork tren man hinh Github cua repo.
+
+  Buoc 2: Clone.
+_ De Clone duoc, chung ta click nut Code tren man hinh Github cua repo chung.
+_ Chon phuong thuc clone ma minh mong muon (SSH hoac HTTPS).
+_ Su dung lenh:
+
+	$ git clone remote_url
+
+
+  Buoc 3: Tao Remote.
+_ De tao duoc Remote, chung ta can kiem tra trong may co bao nhieu Remote roi bang lenh:
+
+	$ git remote -v
+
+_ Neu moi chi co 1 remote la origin thi chung ta can tao them 1 Remote nua ten la Awesome bang lenh:
+
+	$ git remote add awesome remote_url
+			      (remote_url o day la cua repo chung)
+
+
+  Buoc 4: Tao nhanh branch.
+_ De tao nhanh, chung ta can su dung lenh:
+
+	$ git checkout -b branch_name
+
+
+  Buoc 5: Tao Commit.
+_ De tao commit, chung ta su dung lenh:
+
+	$ git commit -m commit_name
+
+_ Tuy nhien truoc do chung ta can app cac file tao moi thay doi/xoa vao trong staging bang lenh:
+
+	$ git add -A
+
+_ Vi the buoc 5 can lam theo thu tu sau:
+
+	$ git add -A
+	$ git commit -m commit_name
+
+
+  Buoc 6: Tao Pull_request.
+_ De tao duoc Pull request chung ta can thuc hien lenh:
+
+	$ git push origin branch_name -f
