@@ -1,0 +1,28 @@
+Bước 1: fork
+đẻ fock được chúng ta sử nút fork trên màn hình của repo
+Bước 2: clone
+đẻ clone được chúng ta click nút code trên màn hình của gitHub của repo chung chọn phương thức clone mà chúng ta mong muốn (SSH hoặc HTTPS)
+sử dụng lệnh :
+git clon remote_url
+Bước 3 tạo remote
+đẻ tạo remote, chúng ta cần kiểm tra máy có bao nhiêu remote rồi bằng lệnh:
+git remote -v
+nếu mới chỉ có 1 remote là origin thì chúng ta cần tạo thêm một remote nữa tên là awesome bằng lệnh:
+git remote awesome remote_url
+Lưu ý: remote_url ở đây là url của repo chung
+
+Bước 4: tạo nhánh
+để tạo nhánh chúng ta sử dụng lệnh:
+git checkout -b tên nhánh
+Bước 5 tạo commit
+để tạo commit chúng ta sử dụng lệnh:
+git commit -m "tên muốn đặt"
+tuy nhiên. trước đó chúng ta cần phải add một tệp mới, thay đổi và xóa vào trong staging bằng lệnh:
+git add -A
+vì thế, bước 5 này cân làm theo thứ tự sau
+git comit -m 'teencommit'
+Bước 6 tạo tệp pull request
+đẻ tạo được pull request, chúng ta dùng lệnh:
+git pull origin tên nhánh -f
+ 
+
