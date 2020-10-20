@@ -1,0 +1,24 @@
+_ Khi Pull bi conflict hoac khi nguoi cung team dc Merge, chung ta can lam cong viec nhu sau:
+
+	$ git checkout main
+	$ git pull awesome main
+	$ git checkout nhanh_bi_conflict
+	$ git rebase main
+
+_ Kiem tra nhanh dang dung bang lenh:
+
+	$ git branch
+
+_ Neu nhu dang dung o nhanh bat dinh ( No branch ) chung ta can kiem tra staus bang lenh:
+
+	$ git status
+
+_ Nhung file mau do la nhung file dang bi conflict. Sua file bi conflict, giu lai code dung va bo di code sai + phan xuong ca.
+_ Sau khi sua file conflict xong sua dung lenh:
+
+	$ git add -A
+	$ git rebase --continue
+
+_ Neu nhu da tro ve nhanh ban dau thi chung ta push lai code bang lenh:
+
+	$ git push origin branch_name -f
