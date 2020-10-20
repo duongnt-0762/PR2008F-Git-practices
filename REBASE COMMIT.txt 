@@ -1,0 +1,15 @@
+truoc khi rebase commit, chung ta can kiem tra solluong cac commit dang co trong may bang lenh 
+git log --oneline
+
+so luong commit dc tinh tu commit merge gan nhat 
+
+de rebase commit dung lenh: git rebase -i HEAD~number of commit 
+
+giu pick dau tien, tu pick thu 2 doi pick thanh add 
+ctrl + x 
+y enter 
+
+giu lai mot commit, cac commit khac them # vao dau 
+ctrl + x
+y enter 
+
