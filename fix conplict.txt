@@ -1,0 +1,16 @@
+khi pull bị conplict hoặc người cùng team bị merged chúng ta cần làm công việc như sau:
+-git checkout main
+-git pull awesome main
+-git checkout nhánh bị conflict
+-git rebase main
+Kiểm tra nhánh đang đứng:
+git branch
+nếu như đang đứng ở nhánh bất định chúng ta cần kiểm tra status:
+-git status
+những fide màu đỏ là những fide đang bị conflict
+sửa fide bị conflict giữ lại code đúng và bỏ đi code sai + phần xương cá 
+sau khi sửa fide conflick xong
+-git add -A
+-git rebase --continue
+nếu như đã trở về nhánh ban đầu thì chúng ta push lại code:
+-git push origin "tên nhánh" -f
