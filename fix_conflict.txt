@@ -1,0 +1,22 @@
+*** khi pull bi conflict hoac khi nguoi cung team ddc merged can lam: 
+
+git checkout main 
+git pull awesome main
+git checkout 'nhanh bi conflict' 
+git rebase main
+
+*** kiem tra nhanh dang dung: git branch 
+neu dang dung o nhanh bat dinh, ta can kiem tr status bang lenh: git status 
+> nhung file mau do la nhung file dang bi conflict 
+
+*** Sua file bi confilct: giu lai code duing va bo di code sai + phan xuong ca
+> sau khi sua file conflict xong su dung lenh: 
+         
+            git add -A
+            git rebase --continue 
+
+neu nhu da tro ve nhanh ban dau thi chung ta push lai code bang lenh: git push origin "ten_nhanh" -f 
+
+
+
+        
